@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import UseStateDemo from "./views/UseStateDemo";
 import UseEffectDemo from "./views/UseEffectDemo";
+import UseRefDemo from "./views/UseRefDemo";
 
 let Title = ({ title }) =>
   <h2>{title}</h2>
@@ -15,6 +16,8 @@ class App extends Component {
         <UseStateDemo />
         <Title title="useEffect Hook Demo"/>
         <UseEffectDemo/>
+        <Title title="useRef Hook Demo"/>
+        <UseRefDemo/>
       </div>
     );
   }
